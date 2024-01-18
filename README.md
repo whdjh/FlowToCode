@@ -1,5 +1,5 @@
-# flow-to-code
-<img src="logo.png" width="200" height="400"/>
+# flow-to-code
+<img src="logo.png" width="100" height="100"/>
 
 # flow-to-code Web page
 > **한경대학교 컴퓨터공학과 소프트웨어융합 학부생**
