@@ -9,7 +9,7 @@
 ## 웹개발팀 소개
 |      이주훈       |       김호탁      |       이상민     |      정재형      |       조정행       |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
-|   [@whdjh](https://github.com/whdjh))   |    [@?](깃허브주소)  | [@?](깃허브주소) | [@?](깃허브주소) | [@?](깃허브주소) |
+|   [@whdjh](https://github.com/whdjh)   |    [@?](깃허브주소)  | [@?](깃허브주소) | [@?](깃허브주소) | [@?](깃허브주소) |
 | 한경대 컴퓨터공학과 sc 4학년 | 한경대 컴퓨터공학과 sc 4학년 | 한경대 컴퓨터공학과 sc 4학년 | 한경대 컴퓨터공학과 sc 4학년 | 한경대 컴퓨터공학과 sc 4학년 |
 
 ## 프로젝트 소개
@@ -27,11 +27,11 @@
 ![Github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)             
 
 ## 다이어그램
-![diagram](image/diagram.png)
+<img src="image/diagram.png" width="300" height="300"/>
 
 ## 간트차트
-![mid](image/mid.png)
-![final)(image/final.png)
+<img src="image/mid.png" width="300" height="300"/>
+<img src="image/fianl.png" width="300" height="300"/>
 
 ## 화면 구성 및 실행 화면 📺
 | 시작 페이지 | 메인 페이지 |
