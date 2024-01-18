@@ -36,9 +36,9 @@
 ## 화면 구성 및 실행 화면 📺
 | 시작 페이지 | 메인 페이지 |
 | :-------------------------------------------: | :------------: |
-| <img width="329" src="주소입력"/> | <img width="329" src="주소입력"/> |  
+| <img width="329" src="image/start.png"/> | <img width="329" src="image/main.png"/> |  
 | 실행화면1 | 실행화면2 |  
-| <img width="329" src="주소입력"/> | <img width="329" src="주소입력"/> |
+| <img width="329" src="image/run1.png"/> | <img width="329" src="image/run1.png"/> |
 
 ## 주요 기능
 
