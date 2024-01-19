@@ -9,7 +9,7 @@
 ## 웹개발팀 소개
 |      이주훈       |       김호탁      |       이상민     |      정재형      |       조정행       |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
-|   [@whdjh](https://github.com/whdjh)   |    [@?](깃허브주소)  | [@?](깃허브주소) | [@jaehyeongjung](https://github.com/jaehyeongjung) | [@?](깃허브주소) |
+|   [@whdjh](https://github.com/whdjh)   |    [@kimhotac](https://github.com/kimhotac)  | [@Idealm99](https://github.com/Idealm99) | [@jaehyeongjung](https://github.com/jaehyeongjung) | [@JOJeongHaeng](https://github.com/JOJeongHaeng) |
 | 한경대 컴퓨터공학과 sc 3학년 | 한경대 컴퓨터공학과 sc 4학년 | 한경대 컴퓨터공학과 sc 3학년 | 한경대 컴퓨터공학과 sc 3학년 | 한경대 컴퓨터공학과 sc 3학년 |
 
 ## 프로젝트 소개
