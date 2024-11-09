@@ -2,7 +2,6 @@
 <img src="logo.png" width="100" height="100"/>
 
 # flow-to-code Web page
-> **한경대학교 컴퓨터공학과 소프트웨어융합 학부생**
 
 > **개발기간:2023.09 - 2023.12**
 
@@ -10,7 +9,6 @@
 |      이주훈       |       김호탁      |       이상민     |      정재형      |       조정행       |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
 |   [@whdjh](https://github.com/whdjh)   |    [@kimhotac](https://github.com/kimhotac)  | [@Idealm99](https://github.com/Idealm99) | [@jaehyeongjung](https://github.com/jaehyeongjung) | [@JOJeongHaeng](https://github.com/JOJeongHaeng) |
-| 한경대 컴퓨터공학과 sc 3학년 | 한경대 컴퓨터공학과 sc 4학년 | 한경대 컴퓨터공학과 sc 3학년 | 한경대 컴퓨터공학과 sc 3학년 | 한경대 컴퓨터공학과 sc 3학년 |
 
 ## 프로젝트 소개
 3학년 융합프로젝트프로젝트에서 프로젝트를 진행한 flow_to_chart라는 프로젝트입니다. 
