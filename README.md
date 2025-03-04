@@ -50,31 +50,3 @@
 ## 주요 기능
 
 ### 플로우차트를 그리면 자동으로 코드를 구성
-
-## 코드 구조
-* image
-  -logo.png
-  
-* js
-  - codeBlock.js
-  - endBlock.js
-  - endifBlock.js
-  - handler.js
-  - ifBlock.js
-  - inputBlock.js
-  - lin.js
-  - main.js
-  - outputBlock.js
-  - point.js
-  - small.js
-  - startBlock.js
-  - ui.js
-  - whileBlock.js
-
-* json
-  
-* info.php
-  
-* index.html
-
-* guid.html
