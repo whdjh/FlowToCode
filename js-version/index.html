@@ -3,232 +3,205 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>흐름, 코딩</title>
+	<title>FlowToCode</title>
     <style>
-        body{
-            margin: 0;
-            overflow: hidden;
-            background: #ececec;
-            font-family: roboto, sans-serif;
-        }
-        #window-dim{
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 999999999;
-            display: none;
-            align-items: center;
-            justify-content: center;
-        }
-        #window{
-            background: #fff;
-            padding: 20px;
-            border-radius: 2px;
-            width: 100%;
-            max-width: 400px;
-            min-height: 00px;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-        }
-        #window #content{
-            display: flex;
-            margin: 10px 0;
-            flex-direction: column;
-        }
-        #window #title{
-            color: #121212;
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        #window #select{
-            display: flex;
-            justify-content: flex-end;
-        }
-        #window #select .button{
-            padding: 10px;
-            background: #fafafa;
-            color: #fff;
-            width: 100%;
-            text-align: center;
-            cursor: pointer;
-        }
-        #window #select .left{
-            margin-right: 5px;
-        }
-        #window #select .right{
-            margin-left: 5px;
-        }
-        
-        #window #select .selected{
-            background: #004a79;
-        }
-        #window #title-in{
-            border: 1px solid #b2b2b2;
-            padding: 5px;
-            outline: none;
-            font-size: 18px;
-        }
-        #window #buttons{
-            display: flex;
-            justify-content: flex-end;
-        }
-        #window #buttons .button{
-            padding: 10px;
-            background: #f1f1f1;
-            color: #fff;
-            margin-left: 10px;
-            cursor: pointer;
-        }
-        #top-bar{
-            background: #bbb9b9;
-            height: 40px;
-            display: flex;
-        }
-        .logo-cont{
-            background: gray;
-            display: flex;
-            align-items: center;
-            width: 254px;
-        }
-        .logo{
-            height: 35px;
-            margin-left: 10px;
-            margin-right: 50px;
-        }
-        .title{
-            display: inline;
-            font-family: roboto, sans-serif;
-            color: #fff;
-            font-size: 20px;
-        }
-        .tab-cont{
-            display: flex;
-            align-items: flex-end;
-        }
-        .tab{
-            background: #5e90b1;
-            display: block;
-            font-family: roboto, sans-serif;
-            font-size: 18px;
-            margin: 0 0 0 3px;
-            padding: 7px;
-            border-radius: 5px 5px 0px 0px;
-            color: #0c66a0;
-            cursor: pointer;
-        }
-        /*main*/
-        .tab-selected{
-            background: #ffffff;
-            display: block;
-            font-family: roboto, sans-serif;
-            font-size: 18px;
-            margin: 0 0 0 3px;
-            padding: 7px;
-            border-radius: 5px 5px 0px 0px;
-            color: rgb(39, 187, 197);
-        }
-        .new{
-            height: 25px;
-            width: 25px;
-            margin: 5px;
-            border-radius: 50%;
-            /*background-image: url('plus.png');*/
-            background-position: center;
-            background-size: contain;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        .new:hover{
-            background-color: #105786;
-        }
-        #canvas{
-            background: #ffffff;
-        }
-        #text-box{
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: none;
-        }
-        #text{
-            text-align: center;
-            outline: none;
-            border: none;
-            font-family: roboto;
-            padding: 0;
-            margin: 0;
-            background: none;
-        }
-        /*#myCanvas{
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #fff;
-            margin: 4px;
-            border-radius: 2px;
-        }*/
-        #console-box{
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            overflow: hidden;
-            margin: 4px;
-            border-radius: 2px;
-            background: #fff;
-        }
-        #console{
-            padding: 4px;
-            margin-right: 15px;
-            border-radius: 2px;
-            position: relative;
-            font-size: 18px;
-            font-family: consolas;
-        }
-        #console-scroll{
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-        #console-prompt{
-            width: auto;
-            position: absolute;
-            display: block;
-            bottom: 0;
-            right: 0;
-            margin: 4px;
-            padding: 4px;
-            border: none;
-            outline: none;
-            font-size: 18px;
-            font-family: consolas;
-            border-radius: 2px;
-        }
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: #ececec;
+        font-family: roboto, sans-serif;
+      }
+      #window-dim {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999999999;
+        display: none;
+        align-items: center;
+        justify-content: center;
+      }
+      #window {
+        background: #fff;
+        padding: 20px;
+        border-radius: 2px;
+        width: 100%;
+        max-width: 400px;
+        min-height: 00px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      #window #content {
+        display: flex;
+        margin: 10px 0;
+        flex-direction: column;
+      }
+      #window #title {
+        color: #121212;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      #window #select {
+        display: flex;
+        justify-content: flex-end;
+      }
+      #window #select .button {
+        padding: 10px;
+        background: #fafafa;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+      }
+      #window #select .left {
+        margin-right: 5px;
+      }
+      #window #select .right {
+        margin-left: 5px;
+      }  
+      #window #select .selected {
+        background: #004a79;
+      }
+      #window #title-in {
+        border: 1px solid #b2b2b2;
+        padding: 5px;
+        outline: none;
+        font-size: 18px;
+      }
+      #window #buttons {
+        display: flex;
+        justify-content: flex-end;
+      }
+      #window #buttons .button {
+        padding: 10px;
+        background: #f1f1f1;
+        color: #fff;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      #top-bar {
+        background: #bbb9b9;
+        height: 40px;
+        display: flex;
+      }
+      .logo-cont {
+        background: gray;
+        display: flex;
+        align-items: center;
+        width: 254px;
+      }
+      .logo {
+        height: 35px;
+        margin-left: 10px;
+        margin-right: 50px;
+      }
+      .title {
+        display: inline;
+        font-family: roboto, sans-serif;
+        color: #fff;
+        font-size: 20px;
+      }
+      .tab-cont {
+        display: flex;
+        align-items: flex-end;
+      }
+      .tab {
+        background: #5e90b1;
+        display: block;
+        font-family: roboto, sans-serif;
+        font-size: 18px;
+        margin: 0 0 0 3px;
+        padding: 7px;
+        border-radius: 5px 5px 0px 0px;
+        color: #0c66a0;
+        cursor: pointer;
+      }
+      /*main*/
+      .tab-selected {
+        background: #ffffff;
+        display: block;
+        font-family: roboto, sans-serif;
+        font-size: 18px;
+        margin: 0 0 0 3px;
+        padding: 7px;
+        border-radius: 5px 5px 0px 0px;
+        color: rgb(39, 187, 197);
+      }
+      #canvas {
+        background: #ffffff;
+      }
+      #text-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+      #text {
+        text-align: center;
+        outline: none;
+        border: none;
+        font-family: roboto;
+        padding: 0;
+        margin: 0;
+        background: none;
+      }
+      #console-box {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        overflow: hidden;
+        margin: 4px;
+        border-radius: 2px;
+        background: #fff;
+      }
+      #console {
+        padding: 4px;
+        margin-right: 15px;
+        border-radius: 2px;
+        position: relative;
+        font-size: 18px;
+        font-family: consolas;
+      }
+      #console-scroll {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      #console-prompt {
+        width: auto;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 0;
+        margin: 4px;
+        padding: 4px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        font-family: consolas;
+        border-radius: 2px;
+      }
     </style>
     <style id="selecting">
-        
     </style>
 </head>
 <body id="body">
-    <div id="top-bar">
-            <div class="logo-cont">
-                <img src="logo.png" class="logo">
-                <div class="title">흐름 코딩 <sub style="font-size: 10px"></sub></div>
-            </div>
-        </a>
-        <div class="tab-cont" id="tabs">
-        </div>
+  <div id="top-bar">
+    <div class="logo-cont">
+      <div class="title">FlowToCode<sub style="font-size: 10px"></sub></div>
     </div>
+    <div class="tab-cont" id="tabs">
+    </div>
+  </div>
 	<canvas id="canvas"></canvas>
     <canvas id="myCanvas"></canvas>
     <div id="console-box">
-        <div id="console"></div>
+      <div id="console"></div>
     <canvas id="console-scroll"></canvas>
     </div>
     <input type="text" id="console-prompt" placeholder="Master Console">
-    <div id="text-box"><input type="text" id="text"></div>
-    
+    <div id="text-box"><input type="text" id="text"></div>    
     <script src="codeBlock.js"></script>
     <script src="inputBlock.js"></script>
     <script src="outputBlock.js"></script>
@@ -241,7 +214,7 @@
     <script src="line.js"></script>
     <script src="ui.js"></script>
     <script src="handler.js"></script>
-	<script src="main.js"></script>
-	<script src="small.js"></script>
+	  <script src="main.js"></script>
+	  <script src="small.js"></script>
 </body>
 </html>

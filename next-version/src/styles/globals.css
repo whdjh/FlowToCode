@@ -1,0 +1,101 @@
+@import './normalize.css';
+
+:root {
+  /* Whites */
+  --white: #ffffff;
+
+  /* Blacks */
+  --black: #000000;
+  --black-dark: #171717;
+  --black-medium: #333236;
+  --black-bright: #4b4b4b;
+
+  /* Grays */
+  --gray: #787486;
+  --gray-dark: #9fa6b2;
+  --gray-medium: #d9d9d9;
+  --gray-bright: #eeeeee;
+  --gray-brightes: #fafafa;
+  --gray-background: #f5f5f5;
+  --gary-scroll: #d2d2d2;
+
+  /* Violets */
+  --violet: #5534da;
+  --violet-bright: #f1effd;
+
+  /* Reds */
+  --red: #d6173a;
+
+  /* Greens */
+  --green: #7ac555;
+
+  /* Purples */
+  --purple: #760dde;
+
+  /* Oranges */
+  --orange: #ffa500;
+
+  /* Blues */
+  --blue: #76a5ea;
+
+  /* Pinks */
+  --pink: #e876ea;
+  --pink-background: #f4d7da;
+  --pink-text: #d25b68;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  font-family: 'Pretendard', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: var(--gray-brightes);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  color: var(--black-medium);
+}
+
+input {
+  border: 1px solid var(--gray-medium);
+}
+
+input::placeholder {
+  color: var(--gray-dark) !important;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid var(--violet) !important;
+  outline: none;
+}
