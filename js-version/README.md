@@ -1,7 +1,4 @@
 # flow-to-code
-<img src="logo.png" width="100" height="100"/>
-
-# flow-to-code Web page
 
 > **개발기간:2023.09 - 2023.12**
 
