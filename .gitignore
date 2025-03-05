@@ -1,1 +1,43 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
 next-version/node_modules/
+next-version/.pnp
+next-version/.pnp.*
+next-version/.yarn/*
+next-version/!.yarn/patches
+next-version/!.yarn/plugins
+next-version/!.yarn/releases
+next-version/!.yarn/versions
+next-version/yarn.lock
+
+# testing
+next-version/coverage
+
+# next.js
+next-version/.next/
+next-version/out/
+
+# production
+next-version/build
+
+# misc
+next-version/.DS_Store
+next-version/*.pem
+.DS_Store
+
+# debug
+next-version/npm-debug.log*
+next-version/yarn-debug.log*
+next-version/yarn-error.log*
+next-version/.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+next-version/.env*
+
+# vercel
+next-version/.vercel
+
+# typescript
+next-version/*.tsbuildinfo
+next-version/next-env.d.ts
