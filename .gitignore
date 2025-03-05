@@ -23,6 +23,7 @@ next-version/build
 
 # misc
 next-version/.DS_Store
+js-version/.DS_Store
 next-version/*.pem
 .DS_Store
 
